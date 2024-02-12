@@ -35,7 +35,8 @@ public class Stack <D>{
     public String toString() {
         StringBuilder sb = new StringBuilder();
         for (D i : stack) {
-            sb.append(i.toString()).append(";\n");
+            if(i != null)
+                sb.append(i.toString()).append(";\n");
         }
         return sb.toString();
     }
